@@ -1,0 +1,34 @@
+[debug] [2022-01-27T21:46:39.942Z] ----------------------------------------------------------------------
+[debug] [2022-01-27T21:46:39.947Z] Command:       C:\Users\HP\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\HP\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve
+[debug] [2022-01-27T21:46:39.948Z] CLI Version:   10.0.1
+[debug] [2022-01-27T21:46:39.948Z] Platform:      win32
+[debug] [2022-01-27T21:46:39.948Z] Node Version:  v12.18.1
+[debug] [2022-01-27T21:46:39.951Z] Time:          Thu Jan 27 2022 21:46:39 GMT+0000 (Greenwich Mean Time)
+[debug] [2022-01-27T21:46:39.951Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-27T21:46:40.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-27T21:46:40.150Z] > authorizing via signed-in user (cmathburkina@gmail.com)
+[debug] [2022-01-27T21:46:40.151Z] [iam] checking project wandja-9370e for permissions ["firebase.projects.get"]
+[debug] [2022-01-27T21:46:40.157Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/wandja-9370e:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-01-27T21:46:41.739Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 27 Jan 2022 21:46:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1128","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-27T21:46:41.744Z] > refreshing access token with scopes: []
+[debug] [2022-01-27T21:46:41.745Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-27T21:46:42.202Z] <<< HTTP RESPONSE 200 {"date":"Thu, 27 Jan 2022 21:46:42 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-27T21:46:42.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wandja-9370e [none]
+[debug] [2022-01-27T21:46:43.352Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wandja-9370e 200
+[debug] [2022-01-27T21:46:43.352Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wandja-9370e {"projectId":"wandja-9370e","projectNumber":"506546880738","displayName":"wandja","name":"projects/wandja-9370e","resources":{"hostingSite":"wandja-9370e","realtimeDatabaseInstance":"wandja-9370e-default-rtdb","storageBucket":"wandja-9370e.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'C:\Users\HP\Documents\CoffeeCup Software\My Website'...
+[info] 
+[debug] [2022-01-27T21:46:44.575Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wandja-9370e/sites 
+[debug] [2022-01-27T21:46:46.244Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wandja-9370e/sites 200
+[debug] [2022-01-27T21:46:46.245Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wandja-9370e/sites {"sites":[{"name":"projects/506546880738/sites/wandja-9370e","defaultUrl":"https://wandja-9370e.web.app","appId":"1:506546880738:web:afbb4a620bccfd26b2debb","type":"DEFAULT_SITE"}]}
+[debug] [2022-01-27T21:46:46.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wandja-9370e/webApps/1:506546880738:web:afbb4a620bccfd26b2debb/config [none]
+[debug] [2022-01-27T21:46:47.353Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wandja-9370e/webApps/1:506546880738:web:afbb4a620bccfd26b2debb/config 200
+[debug] [2022-01-27T21:46:47.354Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wandja-9370e/webApps/1:506546880738:web:afbb4a620bccfd26b2debb/config {"projectId":"wandja-9370e","appId":"1:506546880738:web:afbb4a620bccfd26b2debb","databaseURL":"https://wandja-9370e-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"wandja-9370e.appspot.com","locationId":"us-central","apiKey":"AIzaSyCnwu2DQRAk85jCVLKg0l47z3zNJRKf3iw","authDomain":"wandja-9370e.firebaseapp.com","messagingSenderId":"506546880738","measurementId":"G-LNZF1J4HFF"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [27/Jan/2022:21:49:42 +0000] "GET /ressources.html HTTP/1.1" 200 11189 "http://localhost:5000/cards.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [27/Jan/2022:21:49:42 +0000] \"GET /ressources.html HTTP/1.1\" 200 11189 \"http://localhost:5000/cards.html\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [27/Jan/2022:21:51:17 +0000] "GET /ressources.html HTTP/1.1" 200 11189 "http://localhost:5000/cards.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [27/Jan/2022:21:51:17 +0000] \"GET /ressources.html HTTP/1.1\" 200 11189 \"http://localhost:5000/cards.html\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36\""}}

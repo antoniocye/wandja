@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 02 Jan 2022 22:32:03 GMT">
+    <meta name="description" content="Qu'est-ce que l'Academic Center et quelles sont ses objectifs? En savoir plus dans la première page du site par la CMath">
+    <meta name="keywords" content="communauté mathématique, cmath, olympiades nationales de mathématiques, burkina faso, antonio kambire">
+    <title>Home | Academic Center</title>
+	<!--Color palette: https://coolors.co/545e75-63adf2-a7cced-304d6d-82a0bc-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- widget stuff here -->
+    <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+	<link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
+	<link rel="icon" 
+      type="image/png" 
+      href="images/icon.png" />
+     <link rel="stylesheet" href="styles/stylesheet.css">
+	<script src="scripts/header.js"></script>
+	
+		  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>  
+	  <!--<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>-->
+	  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.js"></script>
+
+	
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.css" />
+	  	  <script type="module" src="app.js"></script>
+
+	  
+	  
+<script type="module">
+</script>
+
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>
+	
+    				function scrollToCMath() {
+                      var elmnt = document.getElementById("cmath");
+                      elmnt.scrollIntoView({behavior: "smooth"});
+                    }
+					function scrollToWandja() {
+                      var elmnt = document.getElementById("wandja");
+                      elmnt.scrollIntoView({behavior: "smooth"});
+                    }	
+					function scrollToOlymp() {
+                      var elmnt = document.getElementById("olymp-row");
+                      elmnt.scrollIntoView({behavior: "smooth"});
+                    }		
+					  
+					  		
+	</script>
+	
+    
+  </head>
+  <body>
+  		<div id="content-wrapper">
+		
+		<!--Overall + Sign in pop up-->
+            <div id="overlay">
+                
+        </div>
+
+         <div id="sign-in">
+             
+            <div class="cancel-wrapper" onClick="closeSignIn();">
+                <img class="cancel-icon" src="images/close-icon.png"/>
+             </div>
+      <div id="messageBox" >
+        Statut: Non connecté! >:
+      </div>
+      <!-- where the sign-in form will be displayed -->
+      <div id="okta-login-container"></div>
+       
+        </div>
+		
+		
+		<!--header-->
+			 <div id="header">
+			 	  <div class="row1">
+				  
+                  <a href="index.html"><img src="images/logo.png" alt="Logo"  class="logo"></a>
+                  <div class="headright">
+                      <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#contacts"> Contactez-nous</a></p>
+                      </div>
+                      <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#donate">Donation</a></p>
+                      </div>
+                      <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#staff">Staff</a></p>
+                      </div>
+					  <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#partners">Partenaires</a></p>
+                      </div>
+                  </div>
+              </div>
+          <div class="row2">
+
+         <div class="desktop">		  
+         <div class="dropdown">
+                  <a href="index.html"><div class="dropbtn" style="background-color: #63ADF2;" >Home</div></a>
+              </div>
+              <div class="dropdown">
+                  <a href="cards.html"><div class="dropbtn">Ressources
+                      <div class="dropdown-content">
+                      </div>
+                  </div></a>
+              </div>
+              <div class="dropdown">
+                  <a href="upload.html"><div class="dropbtn">Upload
+                      <div class="dropdown-content">
+                          
+                      </div>
+                  </div></a>
+              </div>
+              <div class="dropdown" id="profile">
+                  <div class="dropbtn" >Profile
+                  </div>
+              </div>
+              </div>
+			  </div>
+			  
+			  <div class="dropdown mobile">
+        <div class="dropbtn" id="dropbtnMobile" onclick="toggleDropdownContent();">Menu <img id="imgDropbtn" style="width:30px; float:right;margin-right:20px; filter:invert(66%) sepia(97%) saturate(1476%) hue-rotate(181deg) brightness(93%) contrast(103%);" src="images/menu.png" />
+            <div class="dropdown-content" id="dropdownMobile">
+                <div class="item"> <a href="index.html"> Home </a></div>
+                <div class="item"><a href="cards.html" > Ressources </a></div>
+                <div class="item"><a href="upload.html" > Upload </a></div>
+                <div class="item" id="profileT"><a href="#" > Profile </a></div>
+				<div class="item"><a href="infos.html" > Infos </a></div>
+            </div>
+        </div>
+            </div>
+			
+			 </div>
+			 <script>
+			                       					var target = document.getElementById("dropdownMobile");
+
+			 if (target.style.display == "block") {
+                           target.style.display = "block";
+                           
+                       } else {
+                           target.style.display = "none";
+                       }
+			 </script>
+			 <div id="content-body">
+    			 
+			 	  <div class="content-left">
+				  <button onclick="scrollToWandja()" >1. Academic Center</button>
+				  	   <button onclick="scrollToCMath()" >2. CMath</button>
+                        <button onclick="scrollToOlymp()" >3. ONM</button>				  	   
+				  </div>
+				  <div class="content-right">
+				  
+				
+		
+		
+		
+				  	   <div id="wandja">
+                                  <div id="wandjaImages">
+                                      <img class="main-pic3" style="border-radius:0px" src="images/cmath.png">
+                                      <img class="main-pic3" src="images/wandja2.jpg">
+                                  </div>
+                                  <h3>QU'EST-CE QUE L'ACADEMIC CENTER?</h3>
+                                  <p>L'Academic Center est une initiative de la CMath pour permettre une compilation de ressources pour la préparation olympique en Francais. 
+								  En effet, il a été extrêmement triste pour le bureau de l’association de noter un manque crucial de ces ressources dans la langue française, ce qui a un effet néfaste dans l'entraînement des “mathlètes” du Burkina Faso et des 28 autres pays francophones au monde. 
+								  Mais ces ressources existent! Le problème est qu’elles sont seulement disponibles en anglais. 
+								  L'Academic Center une plateforme communautaire qui permet à différents acteurs de traduire ces ressources anglophones pour qu’elles puissent être disponibles pour ceux qui ne parlent pas anglais. 
+								  Cette initiative est dédiée à Joséphine Guidy Wandja, première femme africaine docteure en mathématiques. 
+								  Dans le long-terme, le projet a pour objectif de croître et de permettre l'accès aux hispanophones, lusophones et bien d’autres a ces ressources de préparation. 
+								  Il est actuellement dirigé par le président de la CMath, Kambiré Cyé Antonio Angelberg.</p>
+                      
+                              </div>	
+							  
+							 							  
+			<div id="cmath">			  
+            <div id="pic-row-pic">
+                <div id="choose-pic">
+                    <div id="item1" style="background-color:lightgray;" class="choose-pic-item"><p>1</p></div>
+                    <div id="item2" class="choose-pic-item"><p>2</p></div>
+                    <div id="item3" class="choose-pic-item"><p>3</p></div>
+                    <div id="item4" class="choose-pic-item"><p>4</p></div>
+                    <div id="item5"class="choose-pic-item"><p>5</p></div>
+                </div>
+                <img id="main-pic"  src="images/home1.jpg">
+			
+			<div class="slogan">
+      			<p id="typing"
+                     style="
+                            font-family:'Apple Chancery';
+                            font-style:italic;
+                            text-align:center;
+                            font-size:20px;
+                            "></p>
+							</div>
+			</div>
+			
+            <div id="pic-row-text">
+			
+                <h3>LA COMMUNAUTE MATHEMATIQUE (CMath)</h3>
+                <p>La Communauté Mathématique est une association à but non lucratif de droit burkinabè qui agit dans le domaine de la promotion des mathématiques et des matières scientifiques au Burkina Faso.</p>
+
+<p>C’est une association composée majoritairement de lycéens qui est reconnue par les ministères de l'intérieur et de l’éducation nationale du Burkina Faso. Elle a aussi des partenariats de qualité, depuis ses débuts, avec l’International School de Ouagadougou qui la soutient dans le cadre de son programme de service social pour ses élèves, la CAEC-BF qui est l’association des anciens élèves de la série scientifique C, et plusieurs autres institutions du Burkina telles que l’Institut Africain de Management, Raynal Assurances SA et la Société d'Ingénierie et de Contrôle du Burkina.</p>
+
+            </div>	  
+			</div>
+			
+			<div id="olymp-row">
+            <div id="pic-in-olymp">
+                <img id="olymp-pic"  src="images/onm.jpg">
+            </div>
+            <div id="text-side-pic">
+                <h3>LES OLYMPIADES NATIONALES DE MATHEMATIQUES (ONM)</h3>
+
+                <p>
+                L’association s’est attelée à l’organisation, l'année scolaire passée, de la première édition des Olympiades Nationales de Mathématiques. Cette compétition était d’envergure nationale, comprenant des participants venant de 10 villes du pays. La nécessité d’organiser des olympiades était claire pour l’association car c'est un moyen efficace de stimuler la curiosité et c’est une compétition saine entre les élèves, chose qui a été démontrée maintes fois dans d'autres disciplines, et dans d'autres pays aussi. Plus de 90 pays dans le monde ont leur propre olympiade nationale de mathématiques et participent chaque année à la plus grande réunion de mathématiciens du lycée au monde: les Olympiades Internationales de Mathématiques. Notre pays faisait partie des tristes délaissés jusqu'à ce que la CMath naisse. 
+                </p>
+
+            </div>
+            <div id="text-bottom-pic">
+                <p>
+                    <h3>POURQUOI ORGANISER LES ONM?</h3>
+                <p>
+                    L'organisation des olympiades était aussi nécessaire par le fait qu'elles ouvrent les portes à toutes sortes d'opportunités pour les élèves qui y participent: dossiers de candidature aux universités internationales, bourses universitaires internationales et nationales en toutes sortes comme celles de l’IAM lors de la première édition, prix de toutes sortes. Dans certains pays même, les olympiades sont devenues une tradition pour lesquelles les élèves se préparent toute l'année. Cette rigueur dans le travail leur permet d'apprendre beaucoup de choses et d'être encore plus préparés pour les années d'université qui les attendent.
+
+                </p>
+                
+            </div>
+            <div id="text-side-text">
+                <h3>EDITION 2020/2021</h3>
+                <p>
+                    Les Olympiades Nationales de Mathématiques édition 2020/2021 ont connu un engouement palpable. En effet, près de 1400 élèves venant de 10 villes du pays ont pris part à la phase éliminatoire de la compétition, parmi lesquels 102 finalistes ont été choisis par ordre de mérite. Les 15 meilleurs de la compétition, à l’issue de la finale, ont été primés le 11 septembre 2021 lors d’une cérémonie à l'Institut Africain de Management (IAM) à laquelle 150 invités ont pris part. Les prix étaient composés d’une bourse de 1 million de francs CFA offerte par l'IAM, d’une motocyclette d’une valeur de 400.000 francs CFA, de téléphones portables de valeur variant entre 70.000 et 90.000, de kits scolaires (sacs et fournitures) et de t-shirts. Des prix spéciaux ont été décernés à la plus forte moyenne des filles par la CAEC-BF, et à la plus jeune participation réussie du concours. 
+                </p>
+            </div>
+        </div>
+		
+				  </div>
+				     
+			 
+					 
+        </div>
+		
+			 
+			 <div id="footer">
+			 	  <div id="topFooter">
+				  	   <div class="social-media">
+					   		<a target="_blank" href="https://m.facebook.com/CMathburkina-105303822032195/"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/facebook.png" /></div></a>
+							<a target="_blank" href="https://www.instagram.com/invites/contact/?i=1hf6ivsfc4ge4&utm_content=nd35lig"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/instagram.png" /></div></a>
+							<a target="_blank" href="https://wa.me/22676603608"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/whatsapp.png" /></div></a>
+							<a target="_top" href="mailto:cmathburkina@gmail.com"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/email.png" /></div></a>
+					   </div>
+					   
+					   <div class="links">
+					   		<a href="index.html"><h6>Home</h6></a> <h6 class="weirdBars"> | </h6>
+							<a href="upload.html"><h6>Upload</h6></a> <h6 class="weirdBars"> | </h6>
+							<a  href="#.html"><h6 id="profileThird">Profile</h6></a> <h6 class="weirdBars"> | </h6>
+							<a class="ressourcesBottom" href="cards.html"><h6>Ressources</h5></a> 
+					   
+					   </div>
+					   
+				  </div>
+			 	  <div id="bottomFooter">
+				  	   <h5><i>«Mathematics is the most beautiful and most powerful creation of the human spirit.»</i></h5>
+					   <p> — Stefan Banach</p>
+                      <p id="copyright">@2022 COMMUNAUTE MATHEMATIQUE | ALL RIGHTS RESERVED</p>
+                  </div>
+                  </div>
+            
+			 
+			 </div>
+			 </div>
+			 <script>
+        var images = [];
+
+        images[0] = ['images/home1.jpg'];
+        images[1] = ['images/home2.jpg'];
+        images[2] = ['images/home3.jpg'];
+        images[3] = ['images/home4.jpg'];
+        images[4] = ['images/home5.jpg'];
+        
+        var items = [];
+        items[0] = ['item1'];
+        items[1] = ['item2'];
+        items[2] = ['item3'];
+        items[3] = ['item4'];
+        items[4] = ['item5'];
+        
+        var index = 0;
+        var itemsIndex = 0;
+
+        function change() {
+            
+            document.getElementById(items[itemsIndex]).style.backgroundColor = "#63ADF2";
+            if(itemsIndex==4 || itemsIndex>4){
+                itemsIndex=0;
+            }
+            else{
+                itemsIndex++;
+            }
+            
+          document.getElementById("main-pic").src = images[index];
+            var temp=4;
+            if(index!=0){
+                temp = index-1;
+            }
+            document.getElementById(items[temp]).style.backgroundColor = "black";
+          if (index == 4) {
+            index = 0;
+          } else {
+            index++;
+          }
+          
+          
+          
+
+          setTimeout(change, 5000);
+        }
+
+        window.onload = change();
+
+    </script>
+    
+    <script>
+        var text = [];
+
+        text[0] = "CMath, une association de jeunes, mais...";
+        text[1] = "Une ambition d'éléphant.";
+        text[2] = "Nous vous présentons l'Academic Center,";
+        text[3] = "Pour révolutionner la préparation olympique au Burkina.";
+        
+        var i = 0;
+        var x = 0;
+        var speed = 100;
+        
+        function typeWriter() {
+            if(x==4){x=0;}
+            speed = 100;
+            txt=text[x];
+          if (i < txt.length) {
+            document.getElementById("typing").innerHTML += txt.charAt(i);
+            i++;
+            if(i == txt.length) {speed = 500;}
+            setTimeout(typeWriter, speed);
+          }
+          else{
+            x++;
+            i = 0;
+            document.getElementById("typing").innerHTML = "";
+
+            setTimeout(typeWriter, 500);
+
+          }
+        }
+                window.setTimeout(typeWriter, 1000);
+				
+				
+
+    </script>
+	
+	
+	
+
+<script src="scripts/commonScript.js"></script>
+<script src="scripts/login.js" type="text/javascript"></script>
+		</div>
+
+    
+
+</body>
+</html>

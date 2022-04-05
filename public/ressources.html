@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Mon, 03 Jan 2022 20:26:43 GMT">
+    <meta name="description" content="Avoir accès aux PDFs des plusieurs olympiades de mathématiques venant du monde entier et tout celà en Français!">
+    <meta name="keywords" content="wandja, communauté mathématique, cmath, project wandja, olympiades nationales de mathématiques, burkina faso, olympiades, pdf, antonio kambire">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+	<link rel="stylesheet" href="styles/ressourcesStyle.css">
+	<!-- widget stuff here -->
+    <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+	<link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Ressources | Academic Center</title>
+	<link rel="icon" 
+      type="image/png" 
+      href="images/icon.png" />
+    <script src="scripts/header.js"></script>
+	<script type="module" src="app.js"></script>
+	<script>
+	
+			 function toggleDropdownContent() {
+                      					var target = document.getElementById("dropdownMobile");
+
+                      if (target.style.display == "none") {
+                           target.style.display = "block";
+						   document.getElementById("dropbtnMobile").style.backgroundColor="#304D6D";
+						   document.getElementById("imgDropbtn").style.filter="invert(0%) sepia(1%) saturate(5%) hue-rotate(304deg) brightness(100%) contrast(102%)";
+                           
+                       } else {
+                           target.style.display = "none";
+						   document.getElementById("dropbtnMobile").style.background="black";
+						   document.getElementById("imgDropbtn").style.filter="invert(66%) sepia(97%) saturate(1476%) hue-rotate(181deg) brightness(93%) contrast(103%)";
+                       }		 
+                    }		
+</script>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  </head>
+  <body>
+  		
+  		<div id="content-wrapper">
+			 <!--Overall + Sign in pop up-->
+            <div id="overlay">
+                
+        </div>
+
+         <div id="sign-in">
+             
+            <div class="cancel-wrapper" onClick="closeSignIn();">
+                <img class="cancel-icon" src="images/close-icon.png"/>
+             </div>
+      <div id="messageBox" >
+        Statut: Non connecté! >:
+      </div>
+      <!-- where the sign-in form will be displayed -->
+      <div id="okta-login-container"></div>
+       
+        </div>
+		
+		
+		<!--header-->
+			 <div id="header">
+			 	  <div class="row1">
+				  
+                  <a href="index.html"><img src="images/logo.png" alt="Logo"  class="logo"></a>
+                  <div class="headright">
+                      <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#contacts"> Contactez-nous</a></p>
+                      </div>
+                      <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#donate">Donation</a></p>
+                      </div>
+                      <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#staff">Staff</a></p>
+                      </div>
+					  <div class="itemHeader">
+                          <p><a style="color:gray;" href="infos.html#partners">Partenaires</a></p>
+                      </div>
+                  </div>
+              </div>
+          <div class="row2">
+
+         <div class="desktop">		  
+         <div class="dropdown">
+                  <a href="index.html"><div class="dropbtn"  >Home</div></a>
+              </div>
+              <div class="dropdown">
+                  <a href="cards.html"><div class="dropbtn"  style="background-color: #63ADF2;" >Ressources
+                      <div class="dropdown-content">
+                      </div>
+                  </div></a>
+              </div>
+              <div class="dropdown">
+                  <a href="upload.html"><div class="dropbtn">Upload
+                      <div class="dropdown-content">
+                          
+                      </div>
+                  </div></a>
+              </div>
+              <div class="dropdown" id="profile">
+                  <div class="dropbtn" >Profile
+                  </div>
+              </div>
+              </div>
+			  </div>
+			  
+			  <div class="dropdown mobile">
+        <div class="dropbtn" id="dropbtnMobile" onclick="toggleDropdownContent();">Menu <img id="imgDropbtn" style="width:30px; float:right;margin-right:20px; filter:invert(66%) sepia(97%) saturate(1476%) hue-rotate(181deg) brightness(93%) contrast(103%);" src="images/menu.png" />
+		<div class="dropdown-content" id="dropdownMobile">
+                <div class="item"> <a href="index.html"> Home </a></div>
+                <div class="item"><a href="cards.html" > Ressources </a></div>
+                <div class="item"><a href="upload.html" > Upload </a></div>
+                <div class="item" id="profileT"><a href="#" > Profile </a></div>
+				<div class="item"><a href="infos.html" > Infos </a></div>
+            </div>
+        </div>
+            </div>
+			<script>
+			                       					var target = document.getElementById("dropdownMobile");
+
+			 if (target.style.display == "block") {
+                           target.style.display = "block";
+                           
+                       } else {
+                           target.style.display = "none";
+                       }
+			 </script>
+			
+			 </div>
+            <div id="content-body">
+			
+				 <div class="content-left toBeHiddenMobile" id="content-left">
+    			 	  
+					  <div id="text-choose">
+                    <h6 id="session-text">Choisissez une ressource</h6>
+                </div>
+				<div class="choose-box" id="choose-box"> 
+					
+
+				  </div>
+				  </div>
+				  <div class="content-right">
+				  
+				  			<img id="ImgToggle" class="toBeHiddenDesktop" style="width:70px;height:70px;margin-top:10px;background:white;padding:10px;border-radius:50%;" onclick="toggleContentLeft()" src="images/fast-forward.png" /> 
+
+				  	   <h2 style="text-align:center;" id="testDisplayed">AIME</h2>
+					  <p class="toBeHiddenDesktop"> Appuyez la double-flèche ci-dessus pour choisir une épreuve spécifique.</p> 
+					  <p>Visionnez cette <a target="_blank" href="https://www.youtube.com/channel/UCVLhCdz5wxQd05yCESuaR5w" style="color:black"><u>vidéo</u></a> pour avoir un aperçu des fonctionnalités du site.</p>
+					  
+					  <p id="titleDisplayed"><b>Titre:</b> AIME 2021 Session II</p>
+					  <p id="descDisplayed"><b>Description:</b> This is the AIME 2021 competition transcribed in French</p>
+					  <p id="yearDisplayed"><b>Année:</b> 2021</p>
+       				   <div id="solutions-container">
+                            <iframe
+                                    frameBorder="0"
+                                    scrolling="auto"
+                                    height="100%"
+                                    width="100%"
+                                    id="pdf" ></iframe>
+							
+                            <div id="background-of-pdf">
+                                <p class="wait">Patientez...</p>
+                            </div>
+                        </div>
+					   
+							</div>
+								  
+						
+						
+            </div><div id="footer">
+			 	  <div id="topFooter">
+				  	   <div class="social-media">
+					   		<a target="_blank" href="https://m.facebook.com/CMathburkina-105303822032195/"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/facebook.png" /></div></a>
+							<a target="_blank" href="https://www.instagram.com/invites/contact/?i=1hf6ivsfc4ge4&utm_content=nd35lig"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/instagram.png" /></div></a>
+							<a target="_blank" href="https://wa.me/22676603608"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/whatsapp.png" /></div></a>
+							<a target="_top" href="mailto:cmathburkina@gmail.com"><div class="social-media-item" > <img style="height:30px;width:30px;" src="images/email.png" /></div></a>
+					   </div>
+					   
+					   <div class="links">
+					   		<a href="index.html"><h6>Home</h6></a> <h6 class="weirdBars"> | </h6>
+							<a href="upload.html"><h6>Upload</h6></a> <h6 class="weirdBars"> | </h6>
+							<a  href="#.html"><h6 id="profileThird">Profile</h6></a> <h6 class="weirdBars"> | </h6>
+							<a class="ressourcesBottom" href="cards.html"><h6>Ressources</h5></a> 
+					   
+					   </div>
+					   
+				  </div>
+			 	  <div id="bottomFooter">
+				  	   <h5><i>«Mathematics is the most beautiful and most powerful creation of the human spirit.»</i></h5>
+					   <p> — Stefan Banach</p>
+                      <p id="copyright">@2022 COMMUNAUTE MATHEMATIQUE | ALL RIGHTS RESERVED</p>
+                  </div>
+                  </div>
+		</div>
+		
+		<script>
+		
+				      var contentLeft = document.getElementById("content-left");
+            var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			var img = document.getElementById("ImgToggle");
+
+		if(vw<=900){
+              contentLeft.style.display = "none";
+		}
+		else{
+			 contentLeft.style.display = "block";
+		}
+						 
+           
+		$( window ).resize(function() {
+		vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            if(vw>900){
+			document.getElementById("overlay").style.display = "none";
+      			 contentLeft.style.display = "block";
+				 img.style.transform = 'rotate(0deg)';
+				 contentLeft.style.zIndex = "0";
+      		}
+        });
+
+	function toggleContentLeft(){
+					 
+					 console.log(contentLeft.display);
+					  if (contentLeft.style.display == "none"){
+					 	  contentLeft.style.display = "block";
+						  contentLeft.style.zIndex = "5";
+						  img.style.transform = 'rotate(90deg)';	
+						  img.style.zIndex = '5';	
+						  document.getElementById("overlay").style.display = "block";	
+					 }
+					 else{
+					 	  contentLeft.style.display = "none";
+						  img.style.transform = 'rotate(0deg)';
+						  document.getElementById("overlay").style.display = "none";
+						  contentLeft.style.zIndex = "0";
+					 }
+			}
+	
+	</script>
+	<script src="scripts/commonScript.js"></script>
+	<script src="scripts/login.js" type="text/javascript"></script>
+  </body>
+</html>
